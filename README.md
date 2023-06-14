@@ -1,4 +1,25 @@
-# ofxAzureKinect
+# ofxAzureKinect - easy setup
+
+- this repository is ofxAddons for AzureKinect without troublesome setup.
+- need `AzureKinectSDK_v141` and `AzureKinectBodyTrackingSDK` in libs.
+	- download zip from [here](https://drive.google.com/file/d/1l0wJL2TAxVnD6kWl3mA1ap5nE_TB_uxP/view?usp=sharing) 
+	- replace `libs` folder.
+- You don't need to setup for EnvironmentVariables! 🙌  
+	(I need to develop with multiple PCs smoothly.)
+
+## Compatibility
+
+Tested with: 
+- openFrameworks 0.11.x
+- Windows 10, Visual Studio 2019 & VSCode
+- should work on only Windows x64 Release build, because included libs for `vs/arm64`
+
+- if you use BodyTracking, you should need to copy `dnn_model_2_0_op11.onnx` or `dnn_model_2_0_lite_op11.onnx`.
+	- in `libs\AzureKinectBodyTrackingSDK\lib\vs\amd64\release\bin` 
+
+---
+
+### ~ belows is the original Readme ~
 
 ofxAddon that allows you to use [Azure Kinect](https://azure.microsoft.com/en-us/services/kinect-dk/) in [openFrameworks](https://github.com/openframeworks/openFrameworks).
 

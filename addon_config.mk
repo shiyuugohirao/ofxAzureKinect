@@ -61,11 +61,11 @@ common:
 	# ADDON_LIBS_EXCLUDE =
 
 vs:
-	ADDON_INCLUDES += $(AZUREKINECT_SDK)\sdk\include
-	ADDON_INCLUDES += $(AZUREKINECT_BODY_SDK)\sdk\include
-	ADDON_LIBS += $(AZUREKINECT_SDK)\sdk\windows-desktop\amd64\release\lib\k4a.lib
-	ADDON_LIBS += $(AZUREKINECT_SDK)\sdk\windows-desktop\amd64\release\lib\k4arecord.lib
-	ADDON_LIBS += $(AZUREKINECT_BODY_SDK)\sdk\windows-desktop\amd64\release\lib\k4abt.lib
+	ADDON_INCLUDES += libs\AzureKinectSDK_v141\include
+	ADDON_INCLUDES += libs\AzureKinectBodyTrackingSDK\include
+	ADDON_LIBS += libs\AzureKinectSDK_v141\lib\vs\amd64\release\lib\k4a.lib
+	ADDON_LIBS += libs\AzureKinectSDK_v141\lib\vs\amd64\release\lib\k4arecord.lib
+	ADDON_LIBS += libs\AzureKinectBodyTrackingSDK\lib\vs\amd64\release\lib\k4abt.lib
 	
 linux64: 
 	ADDON_INCLUDES += /usr/include

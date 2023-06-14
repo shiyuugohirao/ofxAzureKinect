@@ -112,3 +112,7 @@ Desktop.ini
 *.vcxproj
 *vcxproj.*
 icon.rc
+
+
+/example*/**/*.obj
+/libs/**
