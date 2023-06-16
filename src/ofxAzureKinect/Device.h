@@ -32,6 +32,8 @@ namespace ofxAzureKinect
 
 		bool syncImages;
 
+		bool disableStreamingIndicator;
+
 		DeviceSettings();
 	};
 

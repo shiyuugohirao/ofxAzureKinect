@@ -19,6 +19,7 @@ namespace ofxAzureKinect
 		, updateWorld(true)
 		, updateVbo(true)
 		, syncImages(true)
+		, disableStreamingIndicator(false)
 	{}
 
 	int Device::getInstalledCount()
@@ -160,6 +161,8 @@ namespace ofxAzureKinect
 		this->bUpdateIr = deviceSettings.updateIr;
 		this->bUpdateWorld = deviceSettings.updateWorld;
 		this->bUpdateVbo = deviceSettings.updateWorld && deviceSettings.updateVbo;
+		
+		this->config.disable_streaming_indicator = deviceSettings.disableStreamingIndicator;
 
 		// Get calibration.
 		try
